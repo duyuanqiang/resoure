@@ -1,0 +1,50 @@
+
+D:\Program Files\TortoiseGit\bin  Git小乌龟路径
+
+git config --global user.name = "duyaunqiang"
+git config --global user.email = "495579962@qq.com"
+
+cd ~
+ssh-keygen -t rsa -C "495579962@qq.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (c/User/%USERNAME%/.ssh/id_rsa): //不用修改(默认存储地点)
+Enter passphrase (empty for no passphrase):  //可以为空
+
+
+cd ~/.ssh			//进入. ssh 目录：
+cat id_rsa.pub    或者 vim id_rsa.pub
+
+这是服务器的SSL证书没有经过第三方机构的签署，所以报错。
+
+解决办法：
+
+git config --global http.sslVerify "false"
+
+git 回退版本
+git reset --hard HEAD^  回退上个版本
+git reset --hard HEAD~3  回退到三次之前
+git reset --hard commit_id  回退到指定版本
+git push origin HEAD --force   强制推送到远端
+git branch -d branch_name 删除本地分支
+git branch -r -d origin/branch_name  git push origin :branch_name 删除远端分支
+修改本地和远端名字
+git branch -m old_branch new_branch #Rename branch locally
+git push origin :old_branch # Delete the old branch 
+git push 
+-set_upstream origin new_branch # P 
+
+没有添加ssh本地和远端是无法建立联系的
+
+在github上新建一个仓库，创建时有一个https地址，记录此地址，后面用
+打开git bash，转到你所要上传的文件夹目录下，并输入git init
+将项目添加到仓库中去：git add .，如果添加某个文件，可以使用git add xxx
+将添加的文件提交到仓库：git commit -m "--注释--"
+将仓库关联到github：git remote add origin https://xxxx，https为刚才github上创建仓库的地址
+把文件推送到github仓库：git push -u origin master，下次推送时，可以把-u去掉
+
+解决github文件夹有向右的白色箭头并且不能打开的解决办法
+删除子文件夹里面的.git文件
+执行git rm --cached [文件夹名]
+执行git add .
+执行git commit -m "commit messge"
+执行git push origin [branch_name]
