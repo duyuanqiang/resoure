@@ -4,6 +4,13 @@
 ３）试图在１）和２）之间谋求平衡，以求最省事。
 
 
+VPN服务器IP：124.223.212.194
+VPN秘钥key:cloud@wsx
+VPN用户：30324
+VPN密码：123456
+
+VNC连接IP端口：172.17.16.2:30324
+
 
 游戏配置,协议:ssh://git@git.h333.me:8022/XH-Server/public.git
 登陆地址:https://git.h333.me/
@@ -16,9 +23,9 @@ ftp: 192.168.1.49:5001
 有度 player038 
 密码 player038
 
-有度新地址43.132.181.147
 
-ip 10.1.1.119
+
+ip 10.1.1.114
 
 推视频地址 http://119.28.68.126/#/newsManager/matchManager
 账号密码bianji
