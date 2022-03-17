@@ -11,6 +11,8 @@ VPN密码：123456
 
 VNC连接IP端口：172.17.16.2:30324
 
+链接vnc 密码hmg123456
+
 
 游戏配置,协议:ssh://git@git.h333.me:8022/XH-Server/public.git
 登陆地址:https://git.h333.me/
