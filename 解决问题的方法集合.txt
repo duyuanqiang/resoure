@@ -1,0 +1,4 @@
+解决远程电脑无法复制文件问题
+https://blog.csdn.net/lushuaiyin/article/details/45391139 csdn
+
+1 执行mstsc 文件 输入ip 点击连接框左下角的选项  点到本地资源 勾选驱动器 点击应用
