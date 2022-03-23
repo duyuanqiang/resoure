@@ -68,3 +68,17 @@ https://github.com/duyuanqiang/resoure.git
 ```
 git config --global http.sslVerify "false"
 ```
+
+本地新建分支
+
+git checkout -b 分支名
+
+推送远端
+
+git push origin a:a
+
+删除分支
+
+git push origin :a 推送空分支覆盖
+
+ git push origin --delete a 删除
