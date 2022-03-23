@@ -48,3 +48,15 @@ git push
 执行git add .
 执行git commit -m "commit messge"
 执行git push origin [branch_name]
+
+// 查看当前代理设置 ，注意：必须有代理服务器
+
+git config --global --get http.proxy
+
+// 设置当前代理为 http://127.0.0.1:1080 或 socket5://127.0.0.1:1080
+
+git config --global http.proxy 'http://127.0.0.1:1080'
+
+git提交或者拉取出现port443的情况，清除代理
+
+https://github.com/duyuanqiang/resoure.git 
