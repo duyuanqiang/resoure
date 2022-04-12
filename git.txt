@@ -49,7 +49,43 @@ git push
 执行git commit -m "commit messge"
 执行git push origin [branch_name]
 
+<<<<<<< HEAD
 查看端口 cmd下
 netstat -ano
 杀死端口
 taskkill -f /pid 7592（pid）
+=======
+// 查看当前代理设置 ，注意：必须有代理服务器
+
+git config --global --get http.proxy
+
+// 设置当前代理为 http://127.0.0.1:1080 或 socket5://127.0.0.1:1080
+
+git config --global http.proxy 'http://127.0.0.1:1080'
+
+git提交或者拉取出现port443的情况，清除代理
+
+https://github.com/duyuanqiang/resoure.git 
+
+## Git报错解决：OpenSSL SSL_read: Connection was reset, errno 10054 错误解决
+
+**打开Git命令页面，执行git命令脚本：修改设置，解除ssl验证**
+
+```
+git config --global http.sslVerify "false"
+```
+
+本地新建分支
+
+git checkout -b 分支名
+
+推送远端
+
+git push origin a:a
+
+删除分支
+
+git push origin :a 推送空分支覆盖
+
+ git push origin --delete a 删除
+>>>>>>> c9d94d126bbcb1b0a3cf4c028f8d8fd670fb6249
