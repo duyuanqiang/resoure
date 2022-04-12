@@ -48,3 +48,8 @@ git push
 执行git add .
 执行git commit -m "commit messge"
 执行git push origin [branch_name]
+
+查看端口 cmd下
+netstat -ano
+杀死端口
+taskkill -f /pid 7592（pid）
