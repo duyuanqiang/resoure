@@ -14,8 +14,9 @@ VPN密码：123456
 
 VNC连接IP端口：172.17.16.2:30324
 
-链接vnc 密码hmg123456
+链接vnc 密码123456
 
+向日葵 密码du123456
 
 游戏配置,协议:ssh://git@git.h333.me:8022/XH-Server/public.git
 登陆地址:https://git.h333.me/
@@ -36,13 +37,14 @@ ip 10.1.1.114
 账号密码bianji
 测试地址 https://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel.ism/.m3u8
 
-禅道：player038 player038123456 
-新禅道：
-新禅道地址 ：  http://52.197.255.220/zentao/my/
+新禅道地址 ：  http://3.113.198.141//zentao/my/
 hamigua
 hamigua123456
  
-C:\ProgramData\Microsoft\Windows\Start Menu\Programs\TortoiseGitsvn duyuanqiang d123456
+C:\ProgramData\Microsoft\Windows\Start Menu\Programs\TortoiseGit
+
+svn duyuanqiang 
+d123456
 
 这个是QA服的服务器配置：
 
@@ -51,11 +53,9 @@ C:\ProgramData\Microsoft\Windows\Start Menu\Programs\TortoiseGitsvn duyuanqian
  CONF.shareId = "205790_38"; 
  CONF.svrUrl = "https://www.qilinziguan.net:1000/";
 
-前端H5连接方式  CONF.svrUrl = "http://192.168.1.xx:8611";
-
+前端H5连接方式  CONF.svrUrl = "http://192.168.1.xx:8611";
 49混服 渠道号：149856_107   代理：73
 49独服 渠道号：942230_8   代理：71
-
 混服 https://www.dfhsffg.com/501736_3
 独服 https://www.dfhsffg.com/501736_3
 git branch --set-upstream-to=origin/远程分支的名字 本地分支的名字 
