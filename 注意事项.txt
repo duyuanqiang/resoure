@@ -36,7 +36,6 @@ ip 10.1.1.114
 账号密码bianji
 测试地址 https://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel.ism/.m3u8
 
-禅道：player038 player038123456 
 新禅道：
 新禅道地址 ：  http://52.197.255.220/zentao/my/
 hamigua
