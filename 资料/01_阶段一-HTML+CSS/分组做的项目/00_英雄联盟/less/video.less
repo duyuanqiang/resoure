@@ -1,0 +1,356 @@
+@titlecolor: #0b0b0b;
+@listcolor: #676767;
+@paragraphcolor: #424242;
+@progresscolor: #919091;
+@firstcolor: #1da6ba;
+@secondcolor: #7ea1a6;
+
+
+.video {
+  height: 593px;
+  background-color: #e3e2e2;
+  padding: 64px 0 66px 0;
+  box-sizing: border-box;
+
+  .video-content {
+    display: flex;
+    justify-content: space-between;
+    width: 1358px;
+    height: 463px;
+    margin: 0 auto;
+
+    .video-left {  //最新视频左边
+      width: 820px;
+      height: 463px;
+      // background-color: #fff;
+
+      .package {  //最新视频导航栏
+        display: flex;
+        justify-content: space-between;
+        width: 820px;
+        height: 35px;
+
+        .video-tab {
+          width: 700px;
+          display: flex;
+          justify-content: space-between;
+
+          .common {
+            .tab-left {
+              ul {
+                width: 470px;
+              }
+            }
+          }
+        }
+
+        .tab-right {
+          display: flex;
+          align-items: center;
+          width: 140px;
+          height: 35px;
+          line-height: 35px;
+          font-size: 12px;
+          border-bottom: 1px solid #d6d7d8;
+          box-sizing: border-box;
+
+          .change {
+            color: @secondcolor;
+            cursor: pointer;
+
+            &:hover i {
+              background-position: -364px -72px;
+            }
+            &:hover span {
+              color: @firstcolor;
+            }
+
+            span {
+              padding: 0 3px;
+            }
+            i {
+              display: inline-block;
+              width: 13px;
+              height: 12px;
+              background-image: url(../img/sprite/common.png);
+              background-position: -369px -46px;
+            }
+          }
+          .line {
+            width: 1px;
+            height: 10px;
+            line-height: 35px;
+            background-color: #cacbcc;
+            box-sizing: border-box;
+            margin: 0 10px 0 10px;
+          }
+          .more {
+            color: @secondcolor;
+            cursor: pointer;
+
+            &:hover i {
+              animation: arrowanim 1.5s linear infinite;
+            }
+
+            &:hover span {
+              color: @firstcolor;
+            }
+
+            a {
+              padding: 0 3px;
+              color: @secondcolor;
+
+              &:hover {
+                text-decoration: underline;
+                color: @firstcolor;
+              }
+            }
+            i {
+              display: inline-block;
+              width: 15px;
+              height: 9px;
+              background-image: url(../img/sprite/common.png);
+              background-position: -213px -126px;
+            }
+          }
+        }
+      }
+      
+      .new-card {  //最新视频内容
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          width: 193px;
+          height: 185px;
+          margin-top: 30px;
+          margin-right: 15px;
+
+          &:hover .text {
+            color: @firstcolor;
+          }
+
+          &:nth-child(4n) {
+            margin-right: 0;
+          }
+          .item {
+            position: relative;
+            width: 193px;
+            height: 107px;
+            cursor: pointer;
+
+
+            &:hover .btn-play {
+              opacity: 1;
+            }
+            &:hover .btn-play>i {
+              animation: animrotate 3s linear infinite;
+            }
+
+            span {
+              position: absolute;
+              right: 10px;
+              bottom: 8px;
+              font-size: 12px;
+              color: #fff;
+            }
+            .btn-play {
+              opacity: 0;
+              position: absolute;
+              left: 70px;
+              top: 27px;
+              width: 54px;
+              height: 54px;
+              // background-color: #fff;
+
+              i {
+                position: absolute;
+                display: block;
+                width: 54px;
+                height: 54px;
+                // background-color: #ccc;
+                background-image: url(../img/sprite/index.png);
+                background-position: -437px -253px;
+                
+              }
+              a {
+                position: relative;
+                display: block;
+                width: 11px;
+                height: 13px;
+                background-image: url(../img/sprite/index.png);
+                background-position: -456px -316px;
+                margin: 20px auto 0 auto;
+              }
+            }
+          }
+          p {
+            padding: 0 10px;
+            font-size: 14px;
+            margin-top: 10px;
+            
+            a {
+              color: @paragraphcolor;
+            }
+          }
+          .play-times {
+            font-size: 12px;
+            padding-left: 10px;
+            margin-right: 60px;
+            color: @progresscolor;
+          }
+          .update-time {
+            font-size: 12px;
+            color: @progresscolor;
+          }
+        }
+      }
+    }
+    .video-right {  //最新视频右边
+      width: 496px;
+      height: 463px;
+      // background-color: #fff;
+      margin-left: 30px;
+
+      .hot-title {
+        display: flex;
+        justify-content: space-between;
+        width: 496px;
+        height: 35px;
+        // background-color: #ff0;
+        .common {
+          .tab-left {
+            width: 400px;
+            margin: 0;
+          }
+        }
+      }
+      .hotprogram {
+        .hotprogram-list {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          width: 496px;
+          height: 337px;
+          // background-color: #ff0;
+          margin-top: 30px;
+
+          .list-card {
+            position: relative;
+            width: 156px;
+            height: 337px;
+            text-align: center;
+            // background-color: #ccc;
+
+            .card-top {
+              .cardtext {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 150px;
+
+                .top5 {
+                  display: block;
+                  color: #fff;
+                  font-weight: 700;
+                }
+                .uptime {
+                  color: #fff;
+                  font-size: 12px;
+                }
+              }
+            }
+            .card-bottom {
+              display: block;
+              // background-color: #fff;
+              width: 156px;
+              height: 40px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+
+              .text {
+                color: @progresscolor;
+                font-size: 14px;
+
+                &:hover {
+                  color: @firstcolor;
+                }
+              }
+            }
+            .author {
+              display: block;
+              margin-left: 0;
+              margin-top: 20px;
+              font-size: 12px;
+              color: @progresscolor;
+              img {
+                border-radius: 15px;
+                vertical-align: middle;
+              }
+
+              &:hover {
+                color: @firstcolor;
+              }
+            }
+          }
+          .btn-left {
+            position: absolute;
+            left: -28px;
+            top: 89px;
+            background-image: url(../img/sprite/index.png);
+            background-position: -221px -397px;
+            width: 23px;
+            height: 51px;
+            transition: filter .2s;
+
+            &:hover {
+              filter: brightness(1.07);
+            }
+          }
+          .btn-right {
+            position: absolute;
+            right: -28px;
+            top: 89px;
+            background-image: url(../img/sprite/index.png);
+            background-position: -193px -397px;
+            width: 23px;
+            height: 51px;
+            transition: filter .2s;
+
+            &:hover {
+              filter: brightness(1.07);
+            }
+          }
+        }
+        .hotprogram-more{
+          width: 506px;
+          height: 50px;
+          line-height: 50px;
+          // background-color: #fff;
+          background-image: url(../img/sprite/index.png);
+          background-position: 0 -522px;
+          text-align: center;
+          color: #ab8e66;
+          cursor: pointer;
+          transition: brightness .3s;
+          
+
+          &:hover {
+            filter: brightness(1.08);
+          }
+          &:hover i {
+            animation: arrowanim 1.5s linear infinite;
+            
+          }
+
+          i {
+            display: inline-block;
+            width: 15px;
+            height: 9px;
+            background-image: url(../img/sprite/common.png);
+            background-position: -362px -99px;
+          }
+        }
+      }
+    }
+  }
+}

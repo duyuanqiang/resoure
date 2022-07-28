@@ -1,0 +1,257 @@
+@titlecolor: #0b0b0b;
+@listcolor: #676767;
+@paragraphcolor: #424242;
+@progresscolor: #919091;
+@firstcolor: #1da6ba;
+@secondcolor: #7ea1a6;
+
+body {
+  background-color: #eee;
+}
+.fanart {
+  display: flex;
+  justify-content: space-between;
+  width: 1358px;
+  height: 572px;
+  margin: 0 auto;
+  padding: 66px 0 82px 0;
+  background-color: #eee;
+  box-sizing: border-box;
+
+  .fanart-left {
+    width: 820px;
+    height: 424px;
+    // background-color: #ff0;
+
+    .fan-top {
+      display: flex;
+      justify-content: space-between;
+      width: 820px;
+      height: 35px;
+      line-height: 35px;
+      // background-color: #00f;
+
+      .mt-left {
+        h2 {
+          width: 170px;
+        }
+      }
+
+      .more {
+        a {
+          font-size: 12px;
+          color: @secondcolor;
+          margin-left: 15px;
+        }
+        i {
+          display: inline-block;
+          background-image: url(../img/sprite/common.png);
+          background-position: -213px -126px;
+          width: 15px;
+          height: 9px;
+        }
+
+        &:hover i {
+          animation: arrowanim 1.5s linear infinite;
+        }
+        &:hover a {
+          color: @firstcolor;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .fan-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: space-between ;
+      width: 820px;
+      height: 369px;
+      // background-color: #00f;
+      margin-top: 21px;
+
+      .item {
+        position: relative;
+        width: 192px;
+        height: 176px;
+        background-color: #ccc;
+        overflow: hidden;
+
+
+        &:hover .itemhover {
+          height: 67px;
+        }
+
+        &:hover img {
+          transform: scale(1.3);
+        }
+
+        img {
+          transition: all 100ms ease-in;
+        }
+        .itemhover {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 192px;
+          height: 0px;
+          background-image: url(../img/fanart/dark70-bg-repeat.png);
+          transition: all 100ms ease-in;
+          z-index: 2;
+          
+          .ptitle {
+            font-weight: 700;
+            color: #fff;
+            padding: 10px 0 0 10px;
+          }
+
+          .pname {
+            display: flex;
+            justify-content: space-between;
+            color: @progresscolor;
+            font-size: 14px;
+            padding: 10px 0 0 10px;
+
+            a {
+              display: flex;
+              color: @progresscolor;
+              margin-right: 10px;
+
+              i {
+                display: block;
+                background-image: url(../img/sprite/index.png);
+                background-position: -456px -226px;
+                width: 23px;
+                height: 17px;
+              }
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  .fanart-right {
+    display: flex;
+    justify-content: space-between;
+    width: 496px;
+    height: 424px;
+    // background-color: #ff0;
+
+    .fan-left {
+      width: 241px;
+      height: 411px;
+      // background-color: #00f;
+      margin-top: 13px;
+    }
+
+    .fan-right {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      width: 240px;
+      height: 369px;
+      // background-color: #00f;
+      margin-top: 55px;
+
+      .item {
+        position: relative;
+        width: 240px;
+        height: 87px;
+        background-color: #fff;
+
+        a {
+          position: absolute;
+          left: 10px;
+          bottom: 30px;
+          display: inline-block;
+          color: #fff;
+          font-size: 16px;
+
+          i {
+            display: inline-block;
+            vertical-align: middle;
+            background-image: url(../img/sprite/index.png);
+            background-position: -484px -226px;
+            width: 17px;
+            height: 17px;
+          }
+        }
+      }
+      .item2 {
+        width: 240px;
+        height: 58px;
+        line-height: 58px;
+        text-align: center;
+        background-color: #fff;
+        background-image: url(../img/sprite/index.png);
+        background-position: -193px -253px;
+
+        &:hover .drop {
+          height: 278px;
+        }
+
+        &:hover .right {
+          animation: arrowanim 1.5s linear infinite;
+        }
+
+        a {
+          font-size: 16px;
+          color: #fff;
+
+          .btn-left {
+            display: inline-block;
+            background-image: url(../img/sprite/index.png);
+            background-position: -531px -226px;
+            width: 20px;
+            height: 9px;
+          }
+          .right {
+            display: inline-block;
+            background-image: url(../img/sprite/common.png);
+            background-position: -342px -99px;
+            width: 15px;
+            height: 9px;
+          }
+          .btn-right {
+            display: inline-block;
+            background-image: url(../img/sprite/index.png);
+            background-position: -506px -226px;
+            width: 20px;
+            height: 9px;
+            margin-left: 10px;
+          }
+        }
+        .drop {
+          position: relative;
+          width: 240px;
+          height: 0px;
+          background-color: #fff;
+          overflow: auto;
+          box-shadow: 0 3px 10px #ccc;
+          transition: all 100ms ease-in;
+          z-index: 10;
+
+          &::-webkit-scrollbar {
+            width: 10px;
+          }
+          &::-webkit-scrollbar-thumb {
+            background: #ABC0C3; // 滑块颜色
+            border-radius: 5px; // 滑块圆角
+            cursor: pointer;
+          }
+
+          p {
+            padding-left: 12px;
+            text-align: left;
+            width: 200px;
+            height: 19px;
+            margin-bottom: 8px;
+          }
+        }
+      }
+    }
+  }
+}

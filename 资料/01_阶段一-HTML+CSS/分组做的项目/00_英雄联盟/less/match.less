@@ -1,0 +1,383 @@
+@titlecolor: #0b0b0b;
+@listcolor: #676767;
+@paragraphcolor: #424242;
+@progresscolor: #919091;
+@firstcolor: #1da6ba;
+@secondcolor: #7ea1a6;
+
+
+
+.match {
+  height: 754px;
+  background-color: #EEE;
+  padding: 64px 0 80px;
+  box-sizing: border-box;
+
+  .title{
+    display: flex;
+    justify-content: space-between;
+    width: 1358px;
+    height: 35px;
+    // background-color: #fff;
+    margin: 0 auto;
+    border-bottom: 1px solid #e0e2e2;
+
+    .mt-left {
+      display: flex;
+
+      .common {
+        .tab-left {
+          ul {
+            width: 250px;
+          }
+        }
+      }
+    }
+    .mt-right {
+      display: flex;
+      height: 35px;
+      line-height: 35px;
+
+      .job2022 {
+        font-size: 16px;
+        color: @listcolor;
+        font-weight: 700;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .more {
+        a {
+          font-size: 12px;
+          color: @secondcolor;
+          margin-left: 15px;
+        }
+        i {
+          display: inline-block;
+          background-image: url(../img/sprite/common.png);
+          background-position: -213px -126px;
+          width: 15px;
+          height: 9px;
+        }
+
+        &:hover i {
+          animation: arrowanim 1.5s linear infinite;
+        }
+        &:hover a {
+          color: @firstcolor;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .card {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 1358px;
+    height: 198px;
+    // background-color: #ff0;
+    margin: 0 auto;
+    margin-top: 30px;
+
+    .item {
+      width: 259px;
+      height: 198px;
+      background-color: #fff;
+
+      .item-top {
+        display: flex;
+        justify-content: space-between;
+        width: 259px;
+        height: 28px;
+        line-height: 28px;
+        background-color: #b2b2b2;
+        background-image: url(../img/match/gamelist-top-ware.png);
+        font-size: 16px;
+
+        .end {
+          margin-left: 10px;
+          color: #fff;
+          font-weight: 700;
+        }
+        .overtime {
+          display: flex;
+          color: #fff;
+
+          p {
+            margin-right: 10px;
+          }
+        }
+      }
+      .item-middle {
+        display: flex;
+        justify-content: space-between;
+        width: 259px;
+        height: 100px;
+        // background-color: #00f;
+        margin-top: 10px;
+
+        .clan1 , .clan2 {
+          width: 85px;
+          height: 85px;
+          // background-color: #fff;
+          text-align: center;
+
+          p {
+            font-size: 14px;
+          }
+        }
+        .score {
+          width: 85px;
+          height: 100px;
+          background-color: #fff;
+          text-align: center;
+
+          .compare {
+            font-weight: 700;
+            font-size: 34px;
+
+            a {
+              margin: 0 2px;
+              color: #000;
+            }
+          }
+          p {
+            margin-top: 5px;
+            padding: 5px 0;
+            border: 1px solid #727272;
+            color: #727272;
+          }
+        }
+      }
+      .item-bottom {
+        margin-top: 10px;
+        text-align: center;
+        color: #727272;
+      }
+    }
+    .btn-left {
+      position: absolute;
+      left: -28px;
+      top: 60px;
+      background-image: url(../img/sprite/index.png);
+      background-position: -221px -397px;
+      width: 23px;
+      height: 51px;
+      transition: filter .2s;
+
+      &:hover {
+        filter: brightness(1.07);
+      }
+    }
+    .btn-right {
+      position: absolute;
+      right: -28px;
+      top: 60px;
+      background-image: url(../img/sprite/index.png);
+      background-position: -193px -397px;
+      width: 23px;
+      height: 51px;
+      transition: filter .2s;
+
+      &:hover {
+        filter: brightness(1.07);
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 1358px;
+    height: 313px;
+    // background-color: #fff;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    .best {
+      width: 820px;
+      height: 313px;
+      // background-color: #f00;
+
+      .week-best {
+        width: 820px;
+        height: 35px;
+        line-height: 35px;
+        // background-color: #ff0;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .player {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 21px;
+        width: 820px;
+        height: 257px;
+        // background-color: #f2f;
+
+        .item {
+          width: 151px;
+          height: 257px;
+          // background-color: #fff;
+
+          .player-top {
+            display: flex;
+            justify-content: space-between;
+            width: 151px;
+            height: 52px;
+            background-color: #fff;
+
+            .icon1,.icon2 {
+              width: 30px;
+              height: 30px;
+              // background-color: #ccc;
+              margin: 0 10px;
+            }
+            .icon1 {
+              background-image: url(../img/sprite/icon-role.png);
+              background-position: -52px 0;
+              width: 18px;
+              height: 18px;
+              margin-top: 10px;
+            }
+            .icon2 {
+              margin-top: 5px;
+            }
+
+          }
+          .player-middle {
+            width: 151px;
+            height: 151px;
+            // background-color: #999;
+            background: linear-gradient(rgb(255, 255, 255) , rgb(132, 132, 132));
+        }
+          .player-bottom {
+            width: 151px;
+            height: 54px;
+            background-color: #fff;
+            
+            p {
+              font-size: 16px;
+              text-align: center;
+              padding-top: 15px;
+            }
+          }
+        }
+      }
+    }
+    .point {
+      width: 496px;
+      height: 313px;
+      // background-color: #f00;
+
+      .po-title {
+        width: 496px;
+        height: 35px;
+        line-height: 35px;
+        // background-color: #ff0;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .po-list {
+        width: 496px;
+        height: 257px;
+        background-color: #fff;
+        margin-top: 21px;
+        cursor: pointer;
+
+        .scroll-title {
+          width: 496px;
+          height: 32px;
+          line-height: 32px;
+          box-sizing: border-box;
+          padding: 0 18px;
+          font-size: 16px;
+          font-weight: 400;
+          background-color: #e0e0e0;
+
+          a {
+            color: #151517;
+          }
+
+          .a2 {
+            margin-left: 69px;
+          }
+          .a3 {
+            margin-left: 160px;
+          }
+          .a4 {
+            margin-left: 69px;
+          }
+
+        }
+
+        .scrollbar {
+          display: block;
+          width: 496px;
+          overflow: auto;
+          height: 225px;
+
+          &::-webkit-scrollbar {
+            width: 5px;
+          }
+          &::-webkit-scrollbar-thumb {
+            background: #ABC0C3; // 滑块颜色
+            border-radius: 5px; // 滑块圆角
+            cursor: pointer;
+          }
+          .swiper {
+            width: 460px;
+            height: 46px;
+            // background-color: #ccc;
+            margin: 0 auto;
+            border-bottom: 1px #e0e2e2 solid;
+            box-sizing: border-box;
+
+            .s1 {
+              display: inline-block;
+              width: 44px;
+              height: 46px;
+              line-height: 46px;
+              text-align: center;
+              font-family: tttgb number,sans-serif;
+              font-size: 18px;
+              color: #7b7b7b;
+            }
+            span {
+              display: inline-block;
+              width: 130px;
+              font-size: 16px;
+              margin-left: 50px;
+              height: 46px;
+              line-height: 46px;
+
+              img {
+                vertical-align: middle;
+              }
+            }
+            .s2 {
+              width: 44px;
+              height: 46px;
+              line-height: 46px;
+              text-align: center;
+              font-size: 16px;
+              color: @secondcolor;
+              margin-left: 90px;
+            }
+            .s3 {
+              width: 44px;
+              height: 46px;
+              line-height: 46px;
+              text-align: center;
+              font-size: 16px;
+              color: @secondcolor;
+              margin-left: 80px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

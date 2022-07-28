@@ -1,0 +1,113 @@
+@import url(./common.less);
+
+.r-nav {
+  position: fixed;
+  bottom: 140px;
+  right: 0;
+  width: 70px;
+  height: 304px;
+  background-color: #fff;
+  border-radius: 9px 0 0 9px;
+
+  .item {
+    margin-top: 5px;
+    width: 66px;
+    height: 53px;
+    // background-color: #ccc;
+    text-align: center;
+    cursor: pointer;
+
+    .touch {
+      a {
+        color: @secondcolor;
+      }
+
+      &:hover i {
+        animation: jump ease 1.5s 1;
+      }
+      &:hover a {
+        color: @firstcolor;
+        font-weight: 700;
+      }
+      &:hover .nav-hot {
+        background-position: -216px -99px;
+        animation: jump ease 1.5s 1;
+      }
+    }
+  }
+  .nav-hot {
+    margin-top: 10px;
+    &:hover i{
+      background-position: -216px -99px;
+    }
+    i {
+      display: block;
+      margin: 0 auto;
+      width: 18px;
+      height: 22px;
+      // background-color: #ff0;
+      background-image: url(../img/sprite/common.png);
+      background-position: -239px -99px;
+    }
+  }
+  .nav-video {
+    &:hover i{
+      background-position: -193px -99px;
+    }
+    i {
+      display: block;
+      margin: 0 auto;
+      width: 18px;
+      height: 22px;
+      // background-color: #ff0;
+      background-image: url(../img/sprite/common.png);
+      background-position: -262px -99px;
+      // background-position: -193px -99px;
+    }
+  }
+  .nav-match {
+    &:hover i{
+      background-position: -247px -46px;
+    }
+    i {
+      display: block;
+      margin: 0 auto;
+      width: 22px;
+      height: 21px;
+      // background-color: #ff0;
+      background-image: url(../img/sprite/common.png);
+      background-position: -220px -46px;
+      // background-position: -247px -46px;
+    }
+  }
+  .nav-hero {
+    &:hover i{
+      background-position: -293px -72px;
+    }
+    i {
+      display: block;
+      margin: 0 auto;
+      width: 19px;
+      height: 22px;
+      // background-color: #ff0;
+      background-image: url(../img/sprite/common.png);
+      background-position: -269px -72px;
+      // background-position: -293px -72px;
+    }
+  }
+  .nav-fanart {
+    &:hover i{
+      background-position: -258px -12px;
+    }
+    i {
+      display: block;
+      margin: 0 auto;
+      width: 24px;
+      height: 20px;
+      // background-color: #ff0;
+      background-image: url(../img/sprite/common.png);
+      background-position: -287px -12px;
+      // background-position: -258px -12px;
+    }
+  }
+}
