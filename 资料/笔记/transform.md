@@ -8,6 +8,26 @@ tanslate(x,y)位移 单位 px,%(相对于自己的大小)
 
 translateX() translateY()
 
+scale（x,y） 变为原来盒子的百分比
+
+rotate（<number>dge,百分度（gradians一个圆分围400度），弧度（radians））,圈数(turns).
+
+transform-origin:left top / 20px 20px /50% 50%(参考元素本身）
+
+transform设置多个值
+
+skew（x（deg，px证书顺时针，负数为逆时针）,y）倾斜
+
+文档中，以加号结尾的 以空格分隔。以#结尾的以“，”分隔
+
+
+
+可执行动画属性在mdn查询
+
+
+
+
+
 设置居中
 
 水平居中
