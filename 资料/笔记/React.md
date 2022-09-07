@@ -113,3 +113,6 @@ jsx中可以直接在html中用js
 列表渲染高阶函数
 
 虚拟dom   ReactElement()
+
+diff算法 更新变化的节点
+
