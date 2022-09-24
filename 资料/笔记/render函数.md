@@ -134,7 +134,7 @@ props属性传递react元素
 
 组件之间共享数据 context
 
-首先定义一个公共的context = React。createContext（{key:value}）,设置默认数据
+首先定义一个公共的context = React.createContext（{key:value}）,设置默认数据
 
 然后包裹住要传递数据的组件 <\namecontext.Provider value={{key:value}}>\<子组件名称>,
 
