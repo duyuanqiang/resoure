@@ -49,3 +49,60 @@ reducer
 
 
 在componentDisMount()订阅调用, render渲染
+
+<h4>封装高阶组件
+
+安装 react-redux
+
+导入 {**Provider**} from "react-redux"
+
+**provider给整个应用程序提供store,别的地方不需要再次导入store**
+
+![1664251707642](C:\Users\dyqiang\AppData\Roaming\Typora\typora-user-images\1664251707642.png)
+
+**connect**
+
+拦截about组件,返回一个经过connect函数加持的高阶组件,第一个括号中的参数整合到props中,供About组件使用,.connect()返回值是一个高阶函数,再次调用connect()()
+
+![1664251755790](C:\Users\dyqiang\AppData\Roaming\Typora\typora-user-images\1664251755790.png)
+
+![1664255014652](C:\Users\dyqiang\AppData\Roaming\Typora\typora-user-images\1664255014652.png)
+
+<h3>中间件
+
+![1664266885188](C:\Users\dyqiang\AppData\Roaming\Typora\typora-user-images\1664266885188.png)
+
+<h4>组件中的异步操作
+
+
+安装redux-thunk
+
+ation返回函数的步骤
+
+![1664266837117](C:\Users\dyqiang\AppData\Roaming\Typora\typora-user-images\1664266837117.png)
+
+![1664266284441](C:\Users\dyqiang\AppData\Roaming\Typora\typora-user-images\1664266284441.png)
+
+![1664266183484](C:\Users\dyqiang\AppData\Roaming\Typora\typora-user-images\1664266183484.png)
+
+<h3>react调试工具
+
+**react-devtool**
+
+**redux-devtool**
+
+开启redux的调试
+
+![1664268912263](C:\Users\dyqiang\AppData\Roaming\Typora\typora-user-images\1664268912263.png)
+
+<h4>redux 的模块化
+
+拆分模块,然后将不同的state合并起来
+
+通过导入combineReducers,组合成新的reducer
+
+![1664274379321](C:\Users\dyqiang\AppData\Roaming\Typora\typora-user-images\1664274379321.png)
+
+再取每个模块数据,就需要跟上模块名.例如state = store.getState().counter
+
+![1664280164094](C:\Users\dyqiang\AppData\Roaming\Typora\typora-user-images\1664280164094.png)
