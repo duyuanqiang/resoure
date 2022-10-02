@@ -142,7 +142,7 @@ git remote -v
 
 添加远程仓库
 
-git remote add pb url     pb可以代替整个字符串
+**git remote add pb url     pb可以代替整个字符串**
 
 git pull相当于 get fetch和 git merge
 
@@ -152,11 +152,13 @@ git pull origin master 拉取远程仓库
 
 
 
-git branch -- set-upstream-to =origin/master 设置上游分支，不再需要指定线上分支节点，可以直接进行合并，
+**git branch -- set-upstream-to =origin/master 设置上游分支，不再需要指定线上分支节点，可以直接进行合并**，
 
 没有共同祖先的分支不允许合并
 
 **只能通过代码 git merge --allow-unrelated-histories  强行关联，最关机键的一步**这样才能正常提交
+
+**git push origin HEAD:main(线上分支名)**
 
 ![1663881846482](C:\Users\dyqiang\AppData\Roaming\Typora\typora-user-images\1663881846482.png)
 
