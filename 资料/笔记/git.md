@@ -296,3 +296,8 @@ get merge feature  此时将master指针调整到feature指针指向的文件
 
 **git config push.default upstream**
 
+
+
+小乌龟图集
+
+![1664804827330](C:\Users\dyqiang\AppData\Roaming\Typora\typora-user-images\1664804827330.png)
