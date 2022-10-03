@@ -126,9 +126,11 @@ ssh 需要配置.ssh 秘钥
 
 生成公钥和私钥
 
-ssh-keygen -t ed25519 -C "your email"
+**ssh-keygen -t ed25519 -C "your email"**
 
-ssh-keygen -t rsa -b 2048 -C "you email"
+**ssh-keygen -t rsa -b 2048 -C "you email"**
+
+**当rsa不被允许使用时ssh-keygen -t ecdsa -b 521 -C “your_email@example.com”**
 
 两种加密方式
 
