@@ -54,7 +54,7 @@ useCallBack的第二个参数里有的变量发生改变,才会更新组件
 
 **useRef**
 
-解决必报陷阱,避免不必要的渲染
+解决闭包陷阱,避免不必要的渲染
 
 ![1664524375073](C:\Users\dyqiang\AppData\Roaming\Typora\typora-user-images\1664524375073.png)
 
