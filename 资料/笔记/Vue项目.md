@@ -42,3 +42,5 @@ import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 app.use(ElementPlus)
 ```
+
+响应式数据，一般要解构传递出去
